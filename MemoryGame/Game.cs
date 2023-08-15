@@ -55,7 +55,7 @@ namespace MemoryGame
         //muzika
         SoundPlayer playerCorrect = null;
         SoundPlayer playerWrong = null;
-      
+        Boolean soundOnOff = true;
         
 
 
@@ -73,6 +73,7 @@ namespace MemoryGame
             InitializeGameState(numOfRows, numOfCol, GameImage, nameOfImage);
             EnableDisablePictureClik("no");
 
+           
      
         }
         //Ovo je za Serializaciju
@@ -93,7 +94,7 @@ namespace MemoryGame
 
         }
 
-
+     
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -129,8 +130,19 @@ namespace MemoryGame
            
             label2.Left = (panel2.ClientSize.Width - label2.Width) / 2;
             label2.Top = (panel2.ClientSize.Height - label2.Height) / 2;
+            setVoiceIcon();
         }
-        
+        private void setVoiceIcon()
+        {
+            Bitmap image;
+            if (soundOnOff)
+                image = GameResource.soundOn;
+            else
+                image = GameResource.soundOff;
+
+            image = ResizeImage(image, (int)(button4.Width - (button4.Width * 0.3)), (int)(button4.Height - (button4.Height * 0.2)));
+            button4.Image = image;
+        }
         //dodeli fotografiju
         private void TakeValue(Bitmap GameImage, String ImageName, int numRows, int numColumns)
         {
@@ -212,8 +224,8 @@ namespace MemoryGame
                         {
 
                             //Pusti muziku
-                          
-                            playerCorrect.Play();
+                            if(playerCorrect != null)
+                                playerCorrect.Play();
                             history.Clear();
                             historyOfUndo.Clear();
                            
@@ -307,7 +319,8 @@ namespace MemoryGame
                         { 
                             secondClicked.BackgroundImage = FindImage(secondClicked);
                             timerForNotEqual.Start();
-                            playerWrong.Play();
+                            if(playerWrong != null)
+                                playerWrong.Play();
                             pb1 = firstClicked;
                             pb2 = secondClicked;
                             setNumOfMovesAndHits(numOfHits, ++numOfMoves);
@@ -679,7 +692,8 @@ namespace MemoryGame
             {
 
                 //Ugasi zvuk
-                playerCorrect.Stop();
+                if(playerCorrect != null)
+                   playerCorrect.Stop();
                 //Zaustavi tajmer
                 timerForEquality.Stop();
 
@@ -708,7 +722,8 @@ namespace MemoryGame
             pb1.BackgroundImage = pb2.BackgroundImage = GameImageNotOpen;
 
             timerForNotEqual.Stop();
-            playerWrong.Stop();
+            if(playerWrong != null)
+                playerWrong.Stop();
         }
 
         private void CreateNewElements(TableLayoutPanel tableLayoutPanel, int numRows, int numColumns)
@@ -1022,6 +1037,27 @@ namespace MemoryGame
 
             tableLayoutPanel.ResumeLayout();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
+            if (soundOnOff) // upaljeno 
+            {
+                //gasimo
+                playerCorrect = null;
+                playerWrong = null;
+                soundOnOff = false;
+            }
+            else
+            {
+                //palimo
+                playerWrong = new SoundPlayer(Music.wrong_buzzer);
+                playerCorrect = new SoundPlayer(Music.correct_choice);
+                soundOnOff = true;
+            }
+            setVoiceIcon();
+        }
+
         //*************************************************************
 
         /// <summary>
@@ -1096,7 +1132,7 @@ namespace MemoryGame
 
             // staviti nameOfIamge on center
             int size = 0;
-            if (nameOfImage == null || nameOfImage.Equals("no name"))
+            if (nameOfImage == null || nameOfImage.Equals("no name") || nameOfImage.Equals("Animals"))
             {
                 label10.Text = "Animals";
                 size = 6;
