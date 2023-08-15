@@ -1,0 +1,17 @@
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Debug\Windowss.exe.config
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Debug\Windowss.exe
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Debug\Windowss.pdb
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.csproj.AssemblyReference.cache
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.Form1.resources
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.Properties.Resources.resources
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.csproj.GenerateResource.cache
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.csproj.CoreCompileInputs.cache
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.exe
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.pdb
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Debug\MemoryGame.exe
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Debug\MemoryGame.pdb
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Debug\MemoryGame.exe.config
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.csproj.CopyComplete
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.MyResource.resources
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\MemoryGame.Settings.resources
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Debug\Windowss.GameMusic.resources

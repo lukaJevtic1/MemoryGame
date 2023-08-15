@@ -1,0 +1,14 @@
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Release\Windowss.exe.config
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Release\Windowss.exe
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Release\Windowss.pdb
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Release\MemoryGame.exe
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Release\MemoryGame.pdb
+E:\MyProjects\SimpleGame\Windowss\Windowss\bin\Release\MemoryGame.exe.config
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.csproj.AssemblyReference.cache
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.Form1.resources
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.Properties.Resources.resources
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.csproj.GenerateResource.cache
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.csproj.CoreCompileInputs.cache
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.csproj.CopyComplete
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.exe
+E:\MyProjects\SimpleGame\Windowss\Windowss\obj\Release\Windowss.pdb
